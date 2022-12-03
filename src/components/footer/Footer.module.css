@@ -1,0 +1,36 @@
+.footer {
+    height: 100vh;
+    background-color: #d8af97;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footerBlock {
+    border: 1px solid;
+    height: 30%;
+    width: 100%;
+    background-color: #bf9780;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    display: flex;
+    gap: 20px
+
+}
+
+.items {
+    background: #a68069;
+    height: 100%;
+    flex-grow:1
+}
+
+.licenceTitle{
+    margin-top: 200px;
+    background-color: #fcfcda;
+}
+
+
+

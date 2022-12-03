@@ -1,0 +1,43 @@
+.contactsBlock {
+    height: 100vh;
+    background-color: #dfcae1;
+}
+
+.contactsContainer {
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.formBlock {
+    border: 1px solid;
+    height: 40%;
+    width: 40%;
+    background-color: #c0a0c3;
+}
+
+
+.form {
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px
+}
+
+
+.textArea {
+    min-height: 100%;
+    width: 80%;
+    overflow: auto;
+    padding: 10%;
+    line-height: 1.42857143;
+}
+
+.button{
+    margin: 5%;
+}
+
+

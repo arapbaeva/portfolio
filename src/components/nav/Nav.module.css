@@ -1,0 +1,14 @@
+.nav {
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    .nav {
+        width: 100%
+    }
+}
