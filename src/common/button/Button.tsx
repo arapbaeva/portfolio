@@ -6,7 +6,7 @@ type ButtonType = {
 }
 export const Button = (props: ButtonType) => {
     return (
-        <button className={style.button}>{props.name}</button>
+        <button type={"submit"} className={style.button}>{props.name}</button>
     );
 };
 

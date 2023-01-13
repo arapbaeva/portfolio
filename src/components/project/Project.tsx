@@ -1,19 +1,22 @@
 import React from 'react';
-import style from './Project.module.css'
-import {Button} from "../../common/button/Button";
+import style from './Project.module.scss'
 
 type ProjectType = {
     description: string
     name: string
+    style: {}
 }
 export const Project = (props: ProjectType) => {
     return (
         <div className={style.project}>
-            <div className={style.photo}>
-                <Button name={'Know More'}/>
-            </div>
-            <h3>{props.name}</h3>
-            <span className={style.description}>{props.description}</span>
+            <figure className={style.effect}>
+                <div className={style.photo} style={props.style}>
+                </div>
+                <figcaption>
+                    <h3>{props.name}</h3>
+                    <p className={style.description}>{props.description}</p>
+                </figcaption>
+            </figure>
         </div>
     );
 };

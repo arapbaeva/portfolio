@@ -1,0 +1,149 @@
+.project {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+  overflow: hidden;
+  list-style: none;
+
+  /* Эффект при наведении */
+  figure.effect {
+    background: #527c82;
+    color: #FFFFFF;
+    .photo {
+      height: 300px;
+      width: 450px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  figure.effect div {
+    width: calc(500px + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(1.1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  figure.effect:hover div {
+    opacity: 0.4;
+    transform: translate3d(0, 0, 0);
+  }
+  figure.effect figcaption {
+    text-align: center;
+  }
+  figure.effect h3 {
+    position: relative;
+    overflow: hidden;
+    padding: 0.5em 0;
+  }
+
+  figure.effect h3::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    transform: translate3d(-100%, 0, 0);
+  }
+  figure.effect:hover h3::after {
+    transform: translate3d(0, 0, 0);
+  }
+  figure.effect p {
+    padding: 1em 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(100%, 0, 0);
+  }
+  figure.effect:hover p {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.project figure {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  background: #527c82;
+  text-align: center;
+  cursor: pointer;
+}
+
+.project figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  opacity: 0.8;
+}
+
+.project figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.project figure figcaption::before,
+.hover-text-one figure figcaption::after {
+  pointer-events: none;
+}
+
+.project figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project figure h3 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.project figure h3 span {
+  font-weight: 800;
+}
+
+.project figure h3,
+.project figure p {
+  margin: 0;
+}
+
+.project figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+
+
+
